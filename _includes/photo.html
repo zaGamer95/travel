@@ -1,0 +1,8 @@
+{% comment %}
+  사용법: {% include photo.html src="01.webp" caption="신주쿠 야경" %}
+  사진은 assets/photos/<여행 slug>/ 에서 찾습니다.
+{% endcomment %}
+<figure class="photo">
+  <img src="{{ '/assets/photos/' | append: page.trip_slug | append: '/' | append: include.src | relative_url }}" alt="{{ include.alt | default: include.caption | escape }}" loading="lazy">
+  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>

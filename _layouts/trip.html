@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% assign trip = page %}{% if page.subpage %}{% assign trip = page.parent_trip %}{% endif %}
+<article class="trip">
+  {% if page.subpage and trip %}<p class="breadcrumb"><a href="{{ trip.url | relative_url }}">← {{ trip.title }}</a></p>{% endif %}
+  <h1>{{ page.title }}</h1>
+  <p class="meta">
+    {{ page.date | date: "%Y.%m.%d" }}{% if page.end_date %} – {{ page.end_date | date: "%m.%d" }}{% endif %}
+    {% include country-tags.html countries=trip.countries %}
+  </p>
+
+  {{ content }}
+
+  {% if trip.subpages.size > 0 %}
+  <nav class="subpages">
+    <h2>이 여행의 글</h2>
+    <ol>
+      <li>{% if page.subpage %}<a href="{{ trip.url | relative_url }}">개요</a>{% else %}<strong>개요</strong>{% endif %}</li>
+      {% for s in trip.subpages %}
+      <li>{% if s.url == page.url %}<strong>{{ s.title }}</strong>{% else %}<a href="{{ s.url | relative_url }}">{{ s.title }}</a>{% endif %}</li>
+      {% endfor %}
+    </ol>
+  </nav>
+  {% endif %}
+
+  {% if trip.album_url %}
+  <p class="album-link"><a href="{{ trip.album_url }}" target="_blank" rel="noopener">전체 사진 보기 ↗</a></p>
+  {% endif %}
+</article>

@@ -1,0 +1,1 @@
+{% for c in include.countries %}<a class="tag" href="{{ '/country/' | append: c | append: '/' | relative_url }}">{{ site.data.countries[c] | default: c }}</a>{% endfor %}

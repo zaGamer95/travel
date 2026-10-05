@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p class="meta">여행 {{ page.trips.size }}개</p>
+<div class="trip-list">
+  {% for t in page.trips %}{% include trip-card.html trip=t %}{% endfor %}
+</div>

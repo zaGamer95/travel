@@ -1,0 +1,76 @@
+:root {
+  --bg: #fdfcfa;
+  --fg: #222;
+  --muted: #6b6b6b;
+  --line: #e6e2dc;
+  --accent: #1f6f78;
+  --tag-bg: #eef4f4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161616;
+    --fg: #e8e6e3;
+    --muted: #9a9a9a;
+    --line: #2e2e2e;
+    --accent: #6cc3cc;
+    --tag-bg: #1f2b2c;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+  line-height: 1.75;
+  word-break: keep-all;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; height: auto; display: block; }
+
+.container { max-width: 760px; margin: 0 auto; padding: 0 16px 48px; }
+.site-header {
+  max-width: 760px; margin: 0 auto; padding: 20px 16px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.site-title { font-weight: 700; color: var(--fg); }
+.home-link { color: var(--muted); font-size: .9rem; }
+.site-footer {
+  max-width: 760px; margin: 0 auto; padding: 24px 16px 40px;
+  border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem;
+}
+
+h1 { font-size: 1.9rem; line-height: 1.3; margin: .5em 0 .2em; }
+.intro, .meta { color: var(--muted); }
+.meta { font-size: .9rem; margin: 0 0 1.2em; }
+.tag {
+  display: inline-block; margin-left: 6px; padding: 0 8px;
+  background: var(--tag-bg); border-radius: 999px; font-size: .8rem;
+}
+
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
+.tabs button {
+  font: inherit; font-size: .95rem; cursor: pointer;
+  padding: 4px 14px; border-radius: 999px;
+  border: 1px solid var(--line); background: transparent; color: var(--fg);
+}
+.tabs button.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+
+.trip-list { display: grid; gap: 28px; }
+.trip-card[hidden] { display: none; }
+.trip-cover img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
+.trip-card h2 { font-size: 1.3rem; margin: 12px 0 2px; }
+.trip-card h2 a { color: var(--fg); }
+.trip-card .meta { margin-bottom: .4em; }
+.trip-card p { margin: 0; }
+.empty { color: var(--muted); }
+
+.trip { font-size: 1.05rem; }
+.breadcrumb { margin: 0; font-size: .9rem; }
+.photo { margin: 28px 0; }
+.photo img { border-radius: 6px; }
+.photo figcaption { color: var(--muted); font-size: .85rem; text-align: center; margin-top: 6px; }
+.subpages, .album-link { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); }
+.subpages h2 { font-size: 1.1rem; }
+.album-link a { font-weight: 600; }

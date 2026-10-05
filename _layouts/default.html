@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.summary | default: site.description | strip_html | escape }}">
+  {% if page.cover %}<meta property="og:image" content="{{ '/assets/photos/' | append: page.trip_slug | append: '/' | append: page.cover | absolute_url }}">{% endif %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="home-link" href="{{ site.home_url }}">← 홈</a>
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  </header>
+  <main class="container">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <a href="{{ '/' | relative_url }}">전체 여행</a>
+    {% for y in site.data.trip_years %}· <a href="{{ '/year/' | append: y | append: '/' | relative_url }}">{{ y }}</a> {% endfor %}
+  </footer>
+</body>
+</html>
