@@ -4,7 +4,7 @@
     {% if t.cover %}<img src="{{ '/assets/photos/' | append: t.trip_slug | append: '/' | append: t.cover | relative_url }}" alt="" loading="lazy">{% endif %}
   </a>
   <div class="trip-body">
-    <h2>{% if t.planned %}<span class="badge">계획</span> {% endif %}<a href="{{ t.url | relative_url }}">{{ t.title }}</a></h2>
+    <h2>{% if t.planned %}<span class="badge">Plan</span> {% endif %}<a href="{{ t.url | relative_url }}">{{ t.title }}</a></h2>
     <p class="meta">
       {{ t.date | date: "%Y.%m.%d" }}{% if t.end_date %}{% assign y1 = t.date | date: "%Y" %}{% assign y2 = t.end_date | date: "%Y" %} – {% if y1 == y2 %}{{ t.end_date | date: "%m.%d" }}{% else %}{{ t.end_date | date: "%Y.%m.%d" }}{% endif %}{% endif %}
       {% include country-tags.html countries=t.countries %}

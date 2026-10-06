@@ -1,9 +1,9 @@
 {% comment %}
-  사용법: {% include restaurants.html city="chengdu" %}
-  여행 글 front matter 의 restaurants.<city> 목록을 카드로 보여줘요.
-  warn 종류: tallow(소기름 국물) beef(소고기) cheese(치즈) shellfish(조개) ok(걱정 없음)
+  Usage: {% include restaurants.html city="chengdu" %}
+  Renders restaurants.<city> from the trip's front matter as cards.
+  warn values: tallow (beef-tallow broth) beef cheese shellfish ok (nothing to avoid)
 {% endcomment %}
-{% assign labels = "tallow:소기름 국물,beef:소고기 메뉴,cheese:치즈,shellfish:조개,ok:걱정 없음" | split: "," %}
+{% assign labels = "tallow:Beef-tallow broth,beef:Beef dishes,cheese:Cheese,shellfish:Shellfish,ok:All clear" | split: "," %}
 <div class="restaurants">
   {% for r in page.restaurants[include.city] %}
   <div class="restaurant">

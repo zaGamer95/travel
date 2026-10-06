@@ -1,6 +1,6 @@
-# 나라별/연도별 페이지를 자동으로 만드는 플러그인(_plugins/)을 쓰기 때문에
-# GitHub 기본 Jekyll 빌드 대신 이 워크플로로 빌드합니다.
-# 레포 Settings → Pages → Source 를 "GitHub Actions" 로 설정해 주세요.
+# The site uses a plugin (_plugins/) that generates the per-country and per-year pages,
+# so it is built with this workflow instead of GitHub's default Jekyll build.
+# Set the repo's Settings → Pages → Source to "GitHub Actions".
 name: Deploy
 
 on:

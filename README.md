@@ -1,72 +1,72 @@
-# 여행 기록 (wonbo.site/travel/)
+# Travels (wonbo.site/travel/)
 
-Jekyll로 만든 여행 블로그예요. GitHub Pages 프로젝트 사이트라서 홈페이지(wonbo.site)의 커스텀 도메인을 그대로 따라 `wonbo.site/travel/` 에 올라가요.
+A travel blog built with Jekyll. It is a GitHub Pages project site, so it inherits the custom domain of the home page (wonbo.site) and is served at `wonbo.site/travel/`.
 
-## 처음 한 번만 설정
+## One-time setup
 
-1. 레포 **Settings → Pages → Build and deployment → Source** 를 **GitHub Actions** 로 바꿔 주세요.
-   (나라별·연도별 페이지를 자동으로 만드는 플러그인 때문에 기본 빌드 대신 `.github/workflows/pages.yml` 로 빌드해요.)
-2. 홈페이지 레포에서 `/travel/` 로 가는 링크를 하나 걸어 주세요.
+1. Set the repo's **Settings → Pages → Build and deployment → Source** to **GitHub Actions**.
+   (A plugin generates the per-country and per-year pages, so the site is built by `.github/workflows/pages.yml` instead of the default build.)
+2. Add a link to `/travel/` from the home page repo.
 
-## 주소 구조
+## URLs
 
-| 주소 | 내용 |
+| URL | What it is |
 | --- | --- |
-| `/travel/` | 전체 여행 목록 (최신순, 한국 · 일본 · 싱가포르 · 그 외 탭) |
-| `/travel/2025-tokyo/` | 여행 하나 |
-| `/travel/2025-tokyo/day-2/` | 그 여행의 하위 글 (선택) |
-| `/travel/country/japan/` | 나라별 모아보기 (자동 생성) |
-| `/travel/year/2025/` | 연도별 모아보기 (자동 생성) |
+| `/travel/` | All trips, newest first, with tabs for Korea · Japan · Singapore · Other |
+| `/travel/2025-tokyo/` | A single trip |
+| `/travel/2025-tokyo/day-2/` | A sub-page of that trip (optional) |
+| `/travel/country/japan/` | Trips by country (generated) |
+| `/travel/year/2025/` | Trips by year (generated) |
 
-## 새 여행 글 쓰기
+## Writing a new trip
 
-1. **사진 줄이기.** 원본을 `raw/2026-osaka/` 에 넣고 실행해요. `raw/` 는 커밋되지 않아요.
+1. **Shrink the photos.** Put the originals in `raw/2026-osaka/` and run the script. `raw/` is never committed.
    ```sh
-   pip install pillow            # 처음 한 번 (아이폰 HEIC는 pillow-heif 도)
+   pip install pillow            # once (plus pillow-heif for iPhone HEIC)
    python3 scripts/resize_photos.py raw/2026-osaka 2026-osaka --rename
    ```
-   긴 변 1600px WebP로 줄여서 `assets/photos/2026-osaka/01.webp, 02.webp …` 로 저장하고, GPS 같은 위치 정보는 지워요.
+   This saves 1600px WebP files as `assets/photos/2026-osaka/01.webp, 02.webp …` and strips GPS and other location data.
 
-2. **글 파일 만들기.** `_trips/2026-osaka.md`
+2. **Create the post.** `_trips/2026-osaka.md`
    ```yaml
    ---
-   title: 오사카 2박 3일
-   date: 2026-05-01          # 출발일. 연도별 페이지와 정렬에 쓰여요.
-   end_date: 2026-05-03      # 선택
-   countries: [japan]        # 여러 나라면 [japan, korea]
-   cover: 01.webp            # 목록에 나오는 대표 사진
-   summary: 한 줄 소개
-   album_url: https://...    # 선택: 전체 앨범 링크 (Google Photos 등)
+   title: Osaka, 3 days
+   date: 2026-05-01          # departure date, used for the year pages and sorting
+   end_date: 2026-05-03      # optional
+   countries: [japan]        # several countries: [japan, korea]
+   cover: 01.webp            # cover photo shown in the lists
+   summary: One-line summary
+   album_url: https://...    # optional: link to the full album (Google Photos etc.)
    ---
    ```
-   본문에서 사진은 이렇게 넣어요.
+   Add photos in the body like this:
    ```liquid
-   {% include photo.html src="03.webp" caption="도톤보리" %}
+   {% include photo.html src="03.webp" caption="Dotonbori" %}
    ```
 
-3. **날마다 나눠 쓰고 싶으면** `_trips/2026-osaka/day-2.md` 처럼 같은 이름의 폴더 안에 파일을 만들면 돼요. 여행 본문 아래에 목록으로 자동 연결돼요.
+3. **To split it by day**, create files in a folder with the same name, such as `_trips/2026-osaka/day-2.md`. They are listed under the trip automatically.
 
-4. **새 나라**는 `_data/countries.yml` 에 `slug: 표시 이름` 한 줄을 추가하세요. 메인 탭에 따로 띄울 나라는 `_config.yml` 의 `featured_countries` 에서 바꿔요.
+4. **New countries**: add a `slug: Display name` line to `_data/countries.yml`. Change which countries get their own home-page tab with `featured_countries` in `_config.yml`.
 
-## 앞으로 갈 여행 계획 쓰기
+## Planning upcoming trips
 
-아직 안 다녀온 여행도 같은 방식으로 `_trips/` 에 글을 만들고 `planned: true` 한 줄을 넣으면 돼요.
+Write a trip you haven't taken yet the same way in `_trips/`, and add `planned: true`.
 
-- 메인 위쪽 **다가오는 여행**에 날짜 순으로 나오고, 글 제목 앞에 "계획" 표시가 붙어요.
-- 나라별·연도별 목록과 지역 탭에는 아직 안 나와요.
-- 다녀온 뒤에는 `planned: true` 를 지우고 `cover`, 사진, 후기를 채우면 그대로 여행기가 돼요. 주소는 바뀌지 않아요.
+- It appears under **Upcoming trips** at the top of the home page, in date order, with a "Plan" badge before the title.
+- It stays out of the country and year lists and the region tabs.
+- After the trip, delete `planned: true` and add a `cover`, photos and the write-up. The URL stays the same.
 
-계획 글에서는 front matter에 목록을 적고 본문에 한 줄만 넣으면 카드로 그려져요. 형식은 예시 글을 그대로 따라 하면 돼요.
+Plan posts can list structured data in the front matter and render it with a single line in the body. Copy the format from the example post.
 
-| 본문에 넣는 줄 | front matter | 보이는 것 |
+| Line in the body | Front matter | Renders |
 | --- | --- | --- |
-| `{% include flights.html %}` | `flights:` | 항공편 카드 |
-| `{% include itinerary.html %}` | `days:` | 날짜별 일정 타임라인 |
-| `{% include restaurants.html city="chengdu" %}` | `restaurants: { chengdu: [...] }` | 식당 카드와 주의 표시 (`tallow` 소기름 국물, `beef` 소고기, `cheese` 치즈, `shellfish` 조개, `ok` 걱정 없음) |
+| `{% include flights.html %}` | `flights:` | Flight cards |
+| `{% include itinerary.html %}` | `days:` | Day-by-day timeline |
+| `{% include restaurants.html city="chengdu" %}` | `restaurants: { chengdu: [...] }` | Restaurant cards with dietary warnings (`tallow` beef-tallow broth, `beef`, `cheese`, `shellfish`, `ok` nothing to avoid) |
 
-예시: `_trips/2026-chengdu-chongqing.md`
+Example: `_trips/2026-chengdu-chongqing.md`
 
-## 내 컴퓨터에서 미리 보기
+## Preview locally
 
 ```sh
 bundle install
@@ -74,6 +74,6 @@ bundle exec jekyll serve
 # http://localhost:4000/travel/
 ```
 
-## 용량 관리
+## Storage
 
-본문 사진은 장당 200~400KB 정도라 레포 권장 용량(1GB) 안에서 여행 수십 개는 충분해요. 원본은 커밋하지 말고 앨범 서비스에 올려 `album_url` 로 연결하세요. 나중에 용량이 차면 사진만 외부 저장소(Cloudflare R2 등)로 옮기고 경로를 바꾸면 돼요.
+Each photo is roughly 200–400KB, so the repo's recommended 1GB is enough for dozens of trips. Don't commit originals; upload them to an album service and link it with `album_url`. If space runs low later, move only the photos to external storage (Cloudflare R2 etc.) and change the paths.

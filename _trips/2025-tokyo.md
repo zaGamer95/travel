@@ -1,22 +1,22 @@
 ---
-title: 도쿄 3박 4일
+title: Tokyo, 4 days
 date: 2025-03-14
 end_date: 2025-03-17
 countries: [japan]
 cover: 01.webp
-summary: 벚꽃 직전의 도쿄. 신주쿠, 시부야, 아사쿠사를 걸었던 기록. (샘플 글이에요)
-# album_url: https://photos.app.goo.gl/...   # 전체 앨범 공유 링크가 있으면 주석을 풀고 넣으세요
+summary: Tokyo just before the cherry blossoms. Walking Shinjuku, Shibuya and Asakusa. (Sample post)
+# album_url: https://photos.app.goo.gl/...   # uncomment and add a shared album link if you have one
 ---
 
-이 글은 구조를 보여주는 **샘플**이에요. 자유롭게 고치거나 지우세요.
+This is a **sample** post that shows how the site is laid out. Feel free to edit or delete it.
 
-## 첫째 날
+## Day 1
 
-도착하자마자 신주쿠로 향했어요.
+Straight to Shinjuku after landing.
 
-{% include photo.html src="01.webp" caption="해 질 무렵의 하늘 (샘플 이미지)" %}
+{% include photo.html src="01.webp" caption="Sky at dusk (sample image)" %}
 
-## 둘째 날 이후
+## Day 2 and after
 
-날마다 글을 따로 쓰고 싶으면 `_trips/2025-tokyo/` 폴더 안에 파일을 추가하면 돼요.
-아래 "이 여행의 글" 목록에 자동으로 붙어요.
+To write a separate post for each day, add files inside the `_trips/2025-tokyo/` folder.
+They are linked automatically in the "Posts from this trip" list below.

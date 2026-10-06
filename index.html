@@ -6,7 +6,7 @@ layout: default
 
 {% if site.data.planned_trips.size > 0 %}
 <section class="planned">
-  <h2>다가오는 여행</h2>
+  <h2>Upcoming trips</h2>
   <div class="trip-list">
     {% for t in site.data.planned_trips %}{% include trip-card.html trip=t %}{% endfor %}
   </div>
@@ -14,14 +14,14 @@ layout: default
 {% endif %}
 
 <nav class="tabs" data-featured="{{ site.featured_countries | join: ' ' }}">
-  <button type="button" data-filter="all" class="active">전체</button>
+  <button type="button" data-filter="all" class="active">All</button>
   {% for c in site.featured_countries %}<button type="button" data-filter="{{ c }}">{{ site.data.countries[c] | default: c }}</button>{% endfor %}
-  <button type="button" data-filter="other">그 외</button>
+  <button type="button" data-filter="other">Other</button>
 </nav>
 
 <div class="trip-list" id="trip-list">
   {% for t in site.data.main_trips %}{% include trip-card.html trip=t %}{% endfor %}
 </div>
-<p class="empty" id="empty" hidden>아직 이 지역 여행 글이 없어요.</p>
+<p class="empty" id="empty" hidden>No trips from this region yet.</p>
 
 <script src="{{ '/assets/js/tabs.js' | relative_url }}"></script>

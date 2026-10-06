@@ -1,4 +1,4 @@
-// 메인 페이지 지역 탭: 전체 / 한국 / 일본 / 싱가포르 / 그 외
+// Region tabs on the home page: All / Korea / Japan / Singapore / Other
 (function () {
   var nav = document.querySelector(".tabs");
   if (!nav) return;

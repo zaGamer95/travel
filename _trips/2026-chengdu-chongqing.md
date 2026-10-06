@@ -1,229 +1,228 @@
 ---
-title: 청두 → 충칭 8박 9일
+title: Chengdu → Chongqing, 9 days
 date: 2026-12-25
 end_date: 2027-01-02
 countries: [china]
-planned: true             # 다녀오면 이 줄을 지우고 cover, 사진, 후기를 채워요.
-summary: 7명이 함께 가는 연말 쓰촨 여행. 청두 판다와 러산대불, 충칭 야경과 훠궈, 새해맞이까지.
+planned: true             # After the trip, delete this line and add a cover, photos and the write-up.
+summary: A year-end Sichuan trip for seven. Pandas and the Leshan Giant Buddha in Chengdu, Chongqing's night views and hotpot, and New Year's Eve.
 
-# 항공편: {% include flights.html %} 로 카드가 그려져요.
+# Flights: rendered as cards by {% include flights.html %}
 flights:
-  - who: 6명
-    airline: 싱가포르항공
+  - who: Group of 6
+    airline: Singapore Airlines
     flight: SQ846
-    from: { code: SIN, city: 싱가포르, date: 12/25 (금), time: "02:10" }
-    to:   { code: TFU, city: 청두 톈푸, date: 12/25 (금), time: "06:55" }
-  - who: 원보
-    airline: 중국국제항공
+    from: { code: SIN, city: Singapore, date: Fri 12/25, time: "02:10" }
+    to:   { code: TFU, city: Chengdu Tianfu, date: Fri 12/25, time: "06:55" }
+  - who: Wonbo
+    airline: Air China
     flight: CA404
-    from: { code: SIN, city: 싱가포르 T1, date: 12/25 (금), time: "16:00" }
-    to:   { code: TFU, city: 청두 톈푸 T1, date: 12/25 (금), time: "21:05" }
-  - who: 7명
-    airline: 싱가포르항공
+    from: { code: SIN, city: Singapore T1, date: Fri 12/25, time: "16:00" }
+    to:   { code: TFU, city: Chengdu Tianfu T1, date: Fri 12/25, time: "21:05" }
+  - who: All 7
+    airline: Singapore Airlines
     flight: SQ819
-    from: { code: CKG, city: 충칭 장베이 T3, date: 1/2 (토), time: "02:35" }
-    to:   { code: SIN, city: 싱가포르, date: 1/2 (토), time: "07:50" }
-    note: 1/1 밤이 지난 새벽 비행기예요. 1/1 저녁 10시 반쯤 공항으로 출발해요.
+    from: { code: CKG, city: Chongqing Jiangbei T3, date: Sat 1/2, time: "02:35" }
+    to:   { code: SIN, city: Singapore, date: Sat 1/2, time: "07:50" }
+    note: This leaves in the early hours after New Year's Day. Head to the airport around 22:30 on 1/1.
 
-# 날짜별 일정: {% include itinerary.html %}
+# Day by day: rendered by {% include itinerary.html %}
 days:
-  - date: 12/25 (금)
-    city: 청두
-    day: "6명: 06:55 도착, 숙소에 짐 두고 쉬기. 오후에 인민공원 찻집, 콴자이샹쯔 산책"
-    night: "6명: 숙소 근처 저녁. 원보: 21:05 도착, 숙소로 (약 1시간)"
-  - date: 12/26 (토)
-    city: 청두
-    day: 판다기지 (오전이 판다가 제일 활발해요, 안에서 전동카 이용), 원수위안(문수원)
-    night: 촨쥐 변검 공연, 훠궈
-  - date: 12/27 (일)
-    city: 청두
-    tag: 당일치기
-    day: 러산대불 (고속철 약 1시간). 절벽 계단이 가파르고 줄이 길어서 부모님은 유람선으로 강에서 보기
-    night: 청두 복귀, 촨촨샹
-  - date: 12/28 (월)
-    city: 청두
-    day: 우허우츠·진리 옛거리, 두보초당
-    night: 춘시루·타이구리, 안순랑교·주옌차오 야경
-  - date: 12/29 (화)
-    city: 청두 → 충칭
-    tag: 이동
-    day: 오전 고속철 (약 1시간 반), 체크인
-    night: 해방비 걷기, 훙야둥 야경, 첫 충칭 훠궈
-  - date: 12/30 (수)
-    city: 충칭
-    tag: 당일치기
-    day: 다쭈석각 (평지 위주) 또는 우룽 카르스트 (협곡 계단이 많아요)
-    night: 숙소 근처에서 가볍게
-  - date: 12/31 (목)
-    city: 충칭
-    day: 리쯔바역(건물 관통 모노레일), 츠치커우 고진
-    night: 장강 케이블카, 해방비 새해 카운트다운
-  - date: 1/1 (금)
-    city: 충칭
-    day: 느지막이 일어나 난산 이커수 전망대, 쇼핑
-    night: 마지막 훠궈, 22:30쯤 공항으로 (시내에서 약 40분)
-  - date: 1/2 (토)
-    city: 충칭 → 싱가포르
-    tag: 귀국
-    day: 02:35 출발, 07:50 싱가포르 도착
+  - date: Fri 12/25
+    city: Chengdu
+    day: "Group of 6: land 06:55, drop bags at the hotel and rest. Afternoon tea in People's Park, stroll Kuanzhai Alley"
+    night: "Group of 6: dinner near the hotel. Wonbo: lands 21:05, to the hotel (about 1 hour)"
+  - date: Sat 12/26
+    city: Chengdu
+    day: Panda Base (pandas are most active in the morning; use the electric carts inside), Wenshu Monastery
+    night: Sichuan opera face-changing show, hotpot
+  - date: Sun 12/27
+    city: Chengdu
+    tag: Day trip
+    day: Leshan Giant Buddha (about 1 hour by high-speed train). The cliff stairs are steep with long queues, so the parents can see it from the river cruise instead
+    night: Back to Chengdu, chuanchuan skewers
+  - date: Mon 12/28
+    city: Chengdu
+    day: Wuhou Shrine and Jinli Old Street, Du Fu Thatched Cottage
+    night: Chunxi Road and Taikoo Li, Anshun Bridge and Jiuyan Bridge at night
+  - date: Tue 12/29
+    city: Chengdu → Chongqing
+    tag: Travel
+    day: Morning high-speed train (about 1.5 hours), check in
+    night: Walk around Jiefangbei, Hongyadong lit up at night, first Chongqing hotpot
+  - date: Wed 12/30
+    city: Chongqing
+    tag: Day trip
+    day: Dazu Rock Carvings (mostly flat) or Wulong Karst (lots of gorge stairs)
+    night: Something easy near the hotel
+  - date: Thu 12/31
+    city: Chongqing
+    day: Liziba station (the monorail that runs through a building), Ciqikou Ancient Town
+    night: Yangtze River Cable Car, New Year countdown at Jiefangbei
+  - date: Fri 1/1
+    city: Chongqing
+    day: Sleep in, Nanshan Yikeshu viewpoint, shopping
+    night: Last hotpot, leave for the airport around 22:30 (about 40 minutes from downtown)
+  - date: Sat 1/2
+    city: Chongqing → Singapore
+    tag: Home
+    day: Depart 02:35, land in Singapore 07:50
 
-# 식당 카드: {% include restaurants.html city="chengdu" %}
-# warn 종류: tallow(소기름 국물) beef(소고기) cheese(치즈) shellfish(조개) ok(걱정 없음)
+# Restaurant cards: {% include restaurants.html city="chengdu" %}
+# warn values: tallow (beef-tallow broth) beef cheese shellfish ok (nothing to avoid)
 restaurants:
   chengdu:
-    - name: 다룽이 (大龙燚)
-      kind: 훠궈
-      why: 청두에서 손꼽히는 훠궈집. 아주 매운 국물로 유명해요.
+    - name: Da Long Yi (大龙燚)
+      kind: Hotpot
+      why: One of Chengdu's best-known hotpot spots, famous for a very spicy broth.
       warn: [tallow]
-      tip: 반반 냄비(鸳鸯锅)로 한쪽은 버섯·토마토 국물. 소고기를 못 먹는 분은 그쪽으로 드세요.
-    - name: 수다샤 (蜀大侠)
-      kind: 훠궈
-      why: 체인이라 자리가 많고 7명 테이블 잡기 쉬워요.
+      tip: Order the split pot (鸳鸯锅) with a mushroom or tomato broth on one side for anyone avoiding beef.
+    - name: Shu Daxia (蜀大侠)
+      kind: Hotpot
+      why: A big chain, so a table for seven is easy to get.
       warn: [tallow]
-      tip: 식물성 기름 국물(清油锅底)이 있어요.
-    - name: 위린 촨촨샹 (玉林串串香)
-      kind: 촨촨샹
-      why: 꼬치를 골라 담아 먹는 청두식. 고르는 재미가 있어요.
+      tip: They offer a vegetable-oil broth (清油锅底).
+    - name: Yulin Chuanchuan (玉林串串香)
+      kind: Chuanchuan skewers
+      why: Chengdu-style skewers you pick yourself and cook in the broth.
       warn: [tallow]
-      tip: 꼬치를 직접 고르니 소고기는 빼기 쉬워요. 국물은 清油로.
-    - name: 마왕쯔 (马旺子)
-      kind: 쓰촨 요리
-      why: 깔끔한 분위기의 쓰촨 요리집. 단체 방이 있어서 부모님 모시기 좋아요.
+      tip: You choose every skewer, so skipping beef is easy. Ask for the 清油 broth.
+    - name: Ma Wangzi (马旺子)
+      kind: Sichuan dishes
+      why: A polished Sichuan restaurant with private rooms, good with parents.
       warn: [beef]
-      tip: 소고기 요리만 빼고 닭·돼지·두부 요리로 주문해요.
-    - name: 천마포더우푸 (陈麻婆豆腐)
-      kind: 쓰촨 요리
-      why: 마파두부가 처음 생긴 곳.
+      tip: Skip the beef dishes and order chicken, pork and tofu.
+    - name: Chen Mapo Tofu (陈麻婆豆腐)
+      kind: Sichuan dishes
+      why: Where mapo tofu was invented.
       warn: [beef]
-      tip: 마파두부에 다진 소고기가 들어가요. 못 드시는 분 몫은 돼지고기로 따로 부탁해요.
-    - name: 룽차오서우 (龙抄手)
-      kind: 간식
-      why: 춘시루의 오래된 완탕집. 여러 간식을 조금씩 맛볼 수 있어요.
+      tip: Mapo tofu is made with minced beef. Ask for a separate pork version.
+    - name: Long Chaoshou (龙抄手)
+      kind: Snacks
+      why: A long-running wonton shop on Chunxi Road. Good for trying many small snacks.
       warn: [ok]
-    - name: 중수이자오 (钟水饺)
-      kind: 간식
-      why: 달콤 매콤한 소스의 돼지고기 물만두.
+    - name: Zhong Dumplings (钟水饺)
+      kind: Snacks
+      why: Pork dumplings in a sweet and spicy sauce.
       warn: [ok]
-    - name: 솽류 라오마 투터우 (双流老妈兔头)
-      kind: 도전 메뉴
-      why: 청두 사람들이 맥주와 즐기는 매운 토끼 머리. 한 번쯤 도전해 볼 만해요.
+    - name: Shuangliu Laoma Rabbit Heads (双流老妈兔头)
+      kind: Adventurous
+      why: Spicy rabbit heads that locals have with beer. Worth trying once.
       warn: [ok]
   chongqing:
-    - name: 페이제 훠궈 (佩姐老火锅)
-      kind: 훠궈
-      why: 충칭에서 가장 유명한 훠궈집 중 하나. 줄이 아주 길어요.
+    - name: Peijie Hotpot (佩姐老火锅)
+      kind: Hotpot
+      why: One of Chongqing's most famous hotpot restaurants. Expect a long queue.
       warn: [tallow, beef]
-      tip: 기본이 소기름 국물이고 대표 메뉴가 소 천엽(毛肚)이에요. 반반 냄비로 한쪽을 清油로.
-    - name: 방공호 훠궈 (防空洞火锅)
-      kind: 훠궈
-      why: 옛 방공호 동굴 안에서 먹는 충칭만의 분위기.
+      tip: The default broth is beef tallow and the signature dish is beef tripe (毛肚). Get a split pot with one side 清油.
+    - name: Air-raid shelter hotpot (防空洞火锅)
+      kind: Hotpot
+      why: Hotpot inside old air-raid shelter caves, a uniquely Chongqing atmosphere.
       warn: [tallow]
-      tip: 가게마다 달라요. 清油 국물이 되는지 먼저 물어봐요.
-    - name: 타오란쥐 (陶然居)
-      kind: 장후차이 (지역 가정식)
-      why: 라쯔지(辣子鸡, 매운 닭튀김볶음) 같은 충칭 가정식. 큰 원탁이 있어요.
+      tip: Every place is different, so ask first whether they have a 清油 broth.
+    - name: Taoranju (陶然居)
+      kind: Jianghu home-style dishes
+      why: Chongqing home cooking such as laziji (辣子鸡, chili-fried chicken). Has large round tables.
       warn: [ok]
-      tip: 소고기 요리만 빼고 주문해요.
-    - name: 화스 완짜몐 (花市豌杂面)
-      kind: 면
-      why: 완두콩과 다진 돼지고기를 얹은 충칭식 비빔면. 아침으로 좋아요.
+      tip: Just skip the beef dishes when ordering.
+    - name: Huashi Wanza Noodles (花市豌杂面)
+      kind: Noodles
+      why: Chongqing noodles topped with peas and minced pork. A good breakfast.
       warn: [ok]
-    - name: 하오유라이 쏸라펀 (好又来酸辣粉)
-      kind: 면
-      why: 해방비 근처의 새콤 매콤한 고구마 당면 맛집.
+    - name: Haoyoulai Suanlafen (好又来酸辣粉)
+      kind: Noodles
+      why: Sour and spicy sweet-potato noodles near Jiefangbei.
       warn: [ok]
-    - name: 바이 하오츠제 (八一好吃街)
-      kind: 간식 거리
-      why: 해방비 옆 먹자골목. 이것저것 조금씩 사 먹기 좋아요.
+    - name: Bayi Food Street (八一好吃街)
+      kind: Street food
+      why: A food alley next to Jiefangbei for grazing on a bit of everything.
       warn: [shellfish, cheese]
-      tip: 매운 조개볶음(花甲)과 치즈 올린 간식이 흔해요. 못 먹는 사람은 골라서.
-    - name: 천 마화 (陈麻花)
-      kind: 간식
-      why: 츠치커우 고진의 명물 꽈배기. 선물용으로도 좋아요.
+      tip: Spicy stir-fried clams (花甲) and cheese-topped snacks are common here. Pick around them.
+    - name: Chen Mahua (陈麻花)
+      kind: Snacks
+      why: Ciqikou's famous fried dough twists. Good as gifts too.
       warn: [ok]
 ---
 
-## 한눈에 보기
+## At a glance
 
-- **기간**: 2026.12.25 (금) – 2027.01.02 (토)
-- **인원**: 7명. 여자친구네 부모님, 남동생, 여동생, 여자친구, 여동생 남자친구, 원보
-- **동선**: 싱가포르 → 청두 (4박) → 고속철 → 충칭 (3박 + 마지막 날) → 싱가포르
+- **Dates**: Fri 2026.12.25 – Sat 2027.01.02
+- **Group**: 7 people. My girlfriend, her parents, her younger brother, her younger sister, her sister's boyfriend, and me (Wonbo)
+- **Route**: Singapore → Chengdu (4 nights) → high-speed train → Chongqing (3 nights plus the last day) → Singapore
 
-## 항공권 (확정)
+## Flights (booked)
 
 {% include flights.html %}
 
-- 여자친구네 가족 6명이 아침에 먼저 도착하고, 원보는 같은 날 밤에 합류해요.
-- 원보 표(CA404)의 위탁 수하물은 23kg 1개예요.
+- My girlfriend's family of 6 arrives in the morning and I join them that night.
+- My ticket (CA404) includes one 23kg checked bag.
 
-## 일정
+## Itinerary
 
 {% include itinerary.html %}
 
-- 첫날 6명은 밤 비행기로 와서 피곤하니 숙소 근처에서 가볍게만 넣었어요. 판다기지처럼 꼭 같이 갈 곳은 원보가 합류한 다음 날부터예요.
-- 부모님과 함께라서 계단이 많은 곳은 덜 걷는 방법을 같이 적었어요.
-- 해방비 새해 카운트다운은 사람이 아주 많고 주변 교통이 통제돼요. 일행이 흩어지지 않게 만날 곳을 정해 두세요.
-- 12/30 당일치기는 빼도 돼요. 7명이면 기사 딸린 승합차를 하루 빌리는 게 기차·택시를 나눠 타는 것보다 편해요.
+- The group of 6 arrives after an overnight flight, so day 1 stays light and close to the hotel. Places we all want to see together, like the Panda Base, start the next day once I've joined.
+- With parents in the group, places with lots of stairs also list a way to do less walking.
+- The New Year countdown at Jiefangbei is extremely crowded and the streets around it are closed to traffic. Pick a meeting point in case the group gets separated.
+- The 12/30 day trip is optional. For seven people, hiring a van with a driver for the day is easier than splitting up across trains and taxis.
 
-## 식당 후보
+## Where to eat
 
-일행 중 **소고기·치즈를 못 먹는 분**과 **조개를 못 먹는 분**이 있어요. 유명한 곳은 주의할 점을 표시해 두고 후보에 넣었어요. 못 먹는 사람 몫만 따로 주문하면 돼요. 7명이면 큰 테이블이 필요하니 유명한 곳은 미리 예약하거나 문 열 때 맞춰 가요. 영업 여부와 위치는 출발 전에 다시 확인해요.
+Someone in the group **can't eat beef or cheese**, and someone **can't eat shellfish**. Famous places are still on the list, with what to watch out for; whoever can't eat a dish just orders something separate. Seven people need a big table, so book popular places ahead or arrive at opening time. Check opening hours and locations again before the trip.
 
-### 쓰촨 음식에서 조심할 것
+### What to watch out for in Sichuan food
 
-- **훠궈·촨촨샹 국물**: 충칭식 빨간 국물은 기본이 **소기름(牛油)**이에요. **칭유(清油, 식물성 기름) 국물**로 바꾸거나, 반반 냄비(鸳鸯锅)에 버섯·토마토 국물을 같이 시켜요.
-- **마파두부**: 원래 레시피는 **다진 소고기**가 들어가요. 돼지고기로 해 달라고 하거나 다른 메뉴를 골라요.
-- **소고기 메뉴**: 마오두(毛肚, 소 천엽), 마오쉐왕(毛血旺), 푸치페이피엔(夫妻肺片)은 소고기·내장이 들어가요.
-- **조개**: 야시장에서 흔한 매운 조개볶음 화자(花甲), 바지락(蛤蜊), 가리비(扇贝), 굴(生蚝)을 피해요.
-- **치즈**: 쓰촨 음식에는 거의 없지만, 요즘 디저트·밀크티에 치즈 폼(芝士)이 자주 올라가요.
+- **Hotpot and chuanchuan broth**: red Chongqing-style broth is made with **beef tallow (牛油)** by default. Ask for **qingyou (清油, vegetable-oil) broth**, or get a split pot (鸳鸯锅) with a mushroom or tomato side.
+- **Mapo tofu**: the original recipe uses **minced beef**. Ask for pork, or pick another dish.
+- **Beef dishes**: maodu (毛肚, beef tripe), maoxuewang (毛血旺) and fuqi feipian (夫妻肺片) all contain beef or offal.
+- **Shellfish**: avoid huajia (花甲, spicy stir-fried clams, common at night markets), clams (蛤蜊), scallops (扇贝) and oysters (生蚝).
+- **Cheese**: rare in Sichuan cooking, but cheese foam (芝士) is common on desserts and milk tea these days.
 
-### 청두
+### Chengdu
 
 {% include restaurants.html city="chengdu" %}
 
-### 충칭
+### Chongqing
 
 {% include restaurants.html city="chongqing" %}
 
-### 주문할 때 보여 줄 말
+### Show this when ordering
 
 <div class="phrase-card">
 <p class="zh">我们有人不吃牛肉、奶酪和贝类（蛤蜊、花甲、扇贝）。<br>请用清油锅底，不要牛油。</p>
-<p class="ko">일행 중에 소고기, 치즈, 조개를 못 먹는 사람이 있어요. 소기름 말고 식물성 기름 국물로 해 주세요.</p>
+<p class="tr">Some of us can't eat beef, cheese or shellfish. Please use vegetable-oil broth, not beef tallow.</p>
 </div>
 
-## 숙소
+## Where to stay
 
-- **청두 (12/25–12/28, 4박)**: 춘시루·타이구리 근처. 지하철 2·3호선이 지나요.
-- 6명은 아침 7시에 도착해서 보통 체크인(오후 2시쯤)까지 기다려야 해요. 바로 쉬려면 **12/24 밤부터 1박을 더 잡거나** 얼리 체크인을 미리 요청해 두세요.
-- **충칭 (12/29–12/31, 3박)**: 해방비·훙야둥 근처. 카운트다운 뒤에 걸어서 돌아올 수 있어요.
-- **1/1**: 체크아웃 뒤 짐을 맡기고 다니다가 밤에 공항으로 가요. 새벽 비행기 전에 씻고 쉬고 싶으면 **1/1 밤까지 1박을 더 잡는 것**도 방법이에요.
-- 7명이면 방 3–4개를 잡거나 레지던스형 숙소가 좋아요. 중국은 **외국인 숙박 등록이 되는 곳**만 외국인을 받을 수 있으니, 예약 전에 "외국인 투숙 가능"을 꼭 확인해요.
+- **Chengdu (12/25–12/28, 4 nights)**: around Chunxi Road and Taikoo Li, on metro lines 2 and 3.
+- The group of 6 arrives at 7am, long before the usual 2pm check-in. To rest right away, **book from the night of 12/24** or request early check-in ahead of time.
+- **Chongqing (12/29–12/31, 3 nights)**: around Jiefangbei and Hongyadong, within walking distance after the countdown.
+- **1/1**: check out, leave the bags at the hotel, and head to the airport at night. To shower and rest before the red-eye, consider **booking the night of 1/1 too**.
+- For seven, book 3–4 rooms or a serviced apartment. In China only places **registered to host foreign guests** can take foreigners, so confirm that before booking.
 
-## 이동
+## Getting around
 
-- **톈푸 공항 → 청두 시내**: 지하철 18호선이나 택시로 약 1시간. 6명은 짐이 많으니 아침 승합차 픽업을 미리 잡아 두면 편하고, 원보는 밤이라 택시·디디로 따로 가요.
-- **청두 → 충칭 고속철**: 청두동역 → 충칭시역·충칭북역, 약 1시간 10분–1시간 40분. 12306 앱이나 Trip.com에서 여권으로 예매하고, 7명이 같은 칸에 앉으려면 한 번에 묶어서 사요.
-- **충칭 시내 → 장베이 공항 T3**: 택시·디디로 약 40분, 지하철은 자정 전에 끊기니 밤에는 차로 가요.
-- **시내**: 지하철이 제일 편해요. 택시(디디)는 한 대에 4명이라 두 대로 나누거나 6–7인승을 불러요.
+- **Tianfu Airport → central Chengdu**: about 1 hour by metro line 18 or taxi. The group of 6 has a lot of luggage, so a pre-booked van pickup is easiest. I'll take a taxi or Didi at night.
+- **Chengdu → Chongqing high-speed train**: Chengdu East → Chongqing West or Chongqing North, about 1h10m–1h40m. Book with passports on the 12306 app or Trip.com, and buy all seven tickets in one order to sit together.
+- **Downtown Chongqing → Jiangbei Airport T3**: about 40 minutes by taxi or Didi. The metro stops before midnight, so go by car at night.
+- **In the cities**: the metro is easiest. A taxi or Didi takes four, so split into two cars or call a 6–7 seater.
 
-## 준비할 것
+## To do
 
-- 항공권: 원보 가는 편 CA404, 오는 편 SQ819 확정
-- 6명 가는 편 SQ846, 7명 모두 오는 편 SQ819인지 확인
-- 입국 조건 확인: 무비자 입국 정책의 적용 기간과 대상을 출발 전에 다시 확인
-- 숙소 예약 (외국인 투숙 가능 여부, 12/24·1/1 추가 1박 여부)
-- 12/25 아침 톈푸 공항 픽업 차량 (6명)
-- 청두 → 충칭 고속철, 러산 기차표 (연말이라 일찍)
-- 판다기지 입장권 (실명 예약)
-- 알리페이·위챗페이에 해외 카드 연결
-- 데이터: 로밍이나 해외 eSIM (카카오톡·구글이 막히지 않아요)
-- 겨울옷: 낮 5–10°C에 습하고, 실내 난방이 약해요
-- 맵기 조절: 주문할 때 "웨이라(微辣, 조금 맵게)"
+- Flights: Wonbo's CA404 out and SQ819 back are booked
+- Group of 6 on SQ846 out; confirm all seven are on SQ819 back
+- Entry rules: check the current visa-free entry policy (dates and eligible passports) before departure
+- Book hotels (foreign guests accepted; extra nights on 12/24 and 1/1?)
+- Airport van pickup for the group of 6 on the morning of 12/25
+- High-speed train Chengdu → Chongqing and train to Leshan (book early over the holidays)
+- Panda Base tickets (booked under real names)
+- Link a foreign card to Alipay and WeChat Pay
+- Data: roaming or a travel eSIM (KakaoTalk, WhatsApp and Google keep working)
+- Winter clothes: 5–10°C during the day, damp, and indoor heating is weak
+- Spice level: ask for "weila (微辣, mildly spicy)" when ordering
 
-## 정해야 할 것
+## Still to decide
 
-- 여자친구 동생이 짜는 안과 비교해서 합치기
-
-- 당일치기 두 번 다 갈지, 하나만 갈지
-- 청두 숙소를 12/24 밤부터 잡을지, 1/1 밤 충칭 숙소를 1박 더 잡을지
+- Compare with my girlfriend's sister's plan and merge the two
+- One day trip or both
+- Whether to book Chengdu from the night of 12/24, and an extra night in Chongqing on 1/1
