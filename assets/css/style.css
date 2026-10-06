@@ -90,7 +90,7 @@ h1 .badge { font-size: .9rem; }
 .trip table { width: 100%; border-collapse: collapse; font-size: .95rem; display: block; overflow-x: auto; }
 .trip th, .trip td { border-bottom: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
 
-/* 계획 글: 항공편 카드 */
+/* Planned trips: flight cards */
 :root { --card: #fff; --warn: #b4532a; --warn-bg: #fbeee6; --ok: #2e7d4f; --ok-bg: #e6f4ea; }
 @media (prefers-color-scheme: dark) {
   :root { --card: #1e1e1e; --warn: #f0a07a; --warn-bg: #3a2519; --ok: #7fd3a0; --ok-bg: #1b3326; }
@@ -111,7 +111,7 @@ h1 .badge { font-size: .9rem; }
 .flight-line { z-index: 1; }
 .flight-note { margin: 10px 0 0; padding-top: 8px; border-top: 1px solid var(--line); font-size: .9rem; color: var(--warn); }
 
-/* 계획 글: 날짜별 일정 */
+/* Planned trips: day-by-day itinerary */
 .itinerary { list-style: none; padding: 0; margin: 16px 0; border-left: 2px solid var(--line); }
 .day { display: grid; grid-template-columns: 92px 1fr; gap: 12px; padding: 0 0 18px 16px; position: relative; }
 .day::before {
@@ -129,7 +129,7 @@ h1 .badge { font-size: .9rem; }
   .day-n { display: inline; margin-right: 6px; }
 }
 
-/* 계획 글: 식당 카드 */
+/* Planned trips: restaurant cards */
 .restaurants { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 12px 0 24px; }
 .restaurant { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; }
 .restaurant h4 { margin: 0 0 4px; font-size: 1.05rem; line-height: 1.4; }
@@ -140,8 +140,8 @@ h1 .badge { font-size: .9rem; }
 .warn { padding: 0 8px; border-radius: 999px; font-size: .75rem; font-weight: 600; background: var(--warn-bg); color: var(--warn); }
 .warn-ok { background: var(--ok-bg); color: var(--ok); }
 .restaurant-tip { margin-top: 8px !important; padding-top: 8px; border-top: 1px dashed var(--line); color: var(--muted); }
-.restaurant-tip::before { content: "대안 · "; font-weight: 600; color: var(--fg); }
+.restaurant-tip::before { content: "Tip · "; font-weight: 600; color: var(--fg); }
 
 .phrase-card { margin: 12px 0 24px; padding: 16px 18px; border-radius: 10px; background: var(--tag-bg); border: 1px solid var(--line); }
 .phrase-card .zh { font-size: 1.25rem; font-weight: 600; line-height: 1.6; margin: 0 0 8px; }
-.phrase-card .ko { margin: 0; color: var(--muted); font-size: .9rem; }
+.phrase-card .tr { margin: 0; color: var(--muted); font-size: .9rem; }

@@ -1,12 +1,12 @@
 {% comment %}
-  여행 글 front matter 의 flights 목록을 카드로 보여줘요.
+  Renders the flights list from the trip's front matter as cards.
   flights:
-    - who: 6명
-      airline: 싱가포르항공
+    - who: Group of 6
+      airline: Singapore Airlines
       flight: SQ846
-      from: { code: SIN, city: 싱가포르, date: 12/25 (금), time: "02:10" }
-      to:   { code: TFU, city: 청두, date: 12/25 (금), time: "06:55" }
-      note: 선택
+      from: { code: SIN, city: Singapore, date: Fri 12/25, time: "02:10" }
+      to:   { code: TFU, city: Chengdu, date: Fri 12/25, time: "06:55" }
+      note: optional
 {% endcomment %}
 <div class="flights">
   {% for f in page.flights %}

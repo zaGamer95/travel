@@ -10,14 +10,14 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="home-link" href="{{ site.home_url }}">← 홈</a>
+    <a class="home-link" href="{{ site.home_url }}">← Home</a>
     <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
   </header>
   <main class="container">
     {{ content }}
   </main>
   <footer class="site-footer">
-    <a href="{{ '/' | relative_url }}">전체 여행</a>
+    <a href="{{ '/' | relative_url }}">All trips</a>
     {% for y in site.data.trip_years %}· <a href="{{ '/year/' | append: y | append: '/' | relative_url }}">{{ y }}</a> {% endfor %}
   </footer>
 </body>

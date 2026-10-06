@@ -3,6 +3,6 @@ _site/
 .sass-cache/
 vendor/
 .bundle/
-# 원본 사진은 커밋하지 않습니다. 여기에 넣고 scripts/resize_photos.py 로 줄이세요.
+# Original photos are not committed. Put them here and shrink them with scripts/resize_photos.py.
 raw/
 .DS_Store

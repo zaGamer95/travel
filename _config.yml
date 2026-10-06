@@ -1,16 +1,16 @@
-title: 여행 기록
-description: 다녀온 여행들을 기록합니다.
-lang: ko
+title: Travels
+description: Trips I have taken, and trips coming up.
+lang: en
 url: "https://wonbo.site"
 baseurl: "/travel"
 home_url: "https://wonbo.site/"
 
 timezone: Asia/Seoul
 markdown: kramdown
-# 예정된 여행(planned: true)은 날짜가 미래라서 이 설정이 있어야 페이지가 만들어져요.
+# Planned trips (planned: true) have future dates, so this is needed for their pages to be built.
 future: true
 
-# 여행 글은 _trips/ 폴더에 둡니다.
+# Trip posts live in _trips/.
 #   _trips/2025-tokyo.md        -> /travel/2025-tokyo/
 #   _trips/2025-tokyo/day-2.md  -> /travel/2025-tokyo/day-2/
 collections:
@@ -25,7 +25,7 @@ defaults:
     values:
       layout: trip
 
-# 메인 페이지 탭에 따로 보여줄 나라. 나머지는 모두 "그 외" 탭으로 갑니다.
+# Countries that get their own tab on the home page. Everything else goes under "Other".
 featured_countries: [korea, japan, singapore]
 
 exclude:

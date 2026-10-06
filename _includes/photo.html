@@ -1,6 +1,6 @@
 {% comment %}
-  사용법: {% include photo.html src="01.webp" caption="신주쿠 야경" %}
-  사진은 assets/photos/<여행 slug>/ 에서 찾습니다.
+  Usage: {% include photo.html src="01.webp" caption="Shinjuku at night" %}
+  Photos are looked up in assets/photos/<trip slug>/.
 {% endcomment %}
 <figure class="photo">
   <img src="{{ '/assets/photos/' | append: page.trip_slug | append: '/' | append: include.src | relative_url }}" alt="{{ include.alt | default: include.caption | escape }}" loading="lazy">
