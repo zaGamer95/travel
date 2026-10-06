@@ -104,7 +104,7 @@ days:
       - { t: "10:00", what: "Three Gorges Museum, with the People's Great Hall across the square (indoors, flat and warm)" }
       - { t: "12:30", what: "Lunch: Chongqing noodles" }
       - { t: "14:00", what: "Rest at the hotel before the late night" }
-      - { t: "17:00", what: "Gong Yan (Li Yan Ba Guo) palace banquet: costumes, dinner and show. Check the session time when booking" }
+      - { t: "17:00", what: "Gong Yan (Li Yan Ba Guo) palace banquet: dinner and a dance show, costumes optional. Check the session time when booking" }
       - { t: "21:30", what: "Walk to Jiefangbei for the countdown" }
   - date: Fri 1/1
     city: Chongqing
@@ -337,7 +337,7 @@ places:
         - { label: Trip.com photos, url: "https://www.trip.com/moments/detail/chengdu-104-130808463/" }
     - name: "Hong Ding Yan"
       kind: Dinner show
-      why: "Hot pot dinner with a Hanfu stage show around the tables, with optional costumes, hair and makeup. Around ¥500 per person; book ahead."
+      why: "Hot pot dinner with a 100-minute show (face-changing, dances, live guzheng). Hanfu, hair and makeup are optional extras. Around ¥500 per person; book ahead."
       maps: 红鼎宴 成都
       links:
         - { label: Trip.com reviews, url: "https://us.trip.com/restaurant/china/chengdu/detail/hong-ding-yan-151900752/" }
@@ -402,7 +402,7 @@ places:
         - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Three_Gorges_Museum" }
     - name: "Gong Yan (Li Yan Ba Guo)"
       kind: Dinner show
-      why: "Palace banquet with ancient costumes, a set dinner and a dance show."
+      why: "Palace-style set dinner (about 90 minutes) with dance and music on a stage around the tables. Costumes, makeup and hair are optional extras."
       maps: 礼宴巴国 宫宴 重庆
       links:
         - { label: Official site, url: "https://gongyanshow.com/en/" }
@@ -445,7 +445,7 @@ places:
 - **12/27**: the Leshan cliff stairs are steep with long queues; the river boat view is easier for anyone who'd rather not climb.
 - **12/28 Hong Ding Yan**: it's hot pot, so when booking ask for a non-tallow pot or dishes without beef for Wyn's mum.
 - **12/31**: the countdown at Jiefangbei is extremely crowded and the streets around it close to traffic. Pick a meeting point in case the group gets separated.
-- **12/28 and 12/31 are both costume banquets.** Keep both, or swap Gong Yan for a simpler New Year's Eve dinner?
+- **12/28 and 12/31 are both dinner shows**: you eat while actors perform. At both, costumes, hair and makeup are an optional extra on top of the dinner, so the family could dress up at one and just watch at the other.
 
 ## Sights
 
@@ -520,5 +520,5 @@ Each card links to reviews and photos on TripAdvisor, background on Wikipedia, a
 ## Still to decide
 
 - Chongqing days (12/30–1/1): go through the draft with the family
-- Keep both costume banquets (Hong Ding Yan and Gong Yan), or swap one
+- Two dinner shows (Hong Ding Yan 12/28, Gong Yan 12/31): keep both, and which one to dress up for
 - Whether to keep a hotel room on 1/1 to rest before the red-eye
