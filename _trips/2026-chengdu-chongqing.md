@@ -4,11 +4,11 @@ date: 2026-12-25
 end_date: 2027-01-02
 countries: [china]
 planned: true             # After the trip, delete this line and add a cover, photos and the write-up.
-summary: A year-end Sichuan trip for seven. Pandas and the Leshan Giant Buddha in Chengdu, Chongqing's night views and hotpot, and New Year's Eve.
+summary: The Kaan Family's year-end Sichuan trip. Pandas and the Leshan Giant Buddha in Chengdu, Chongqing's night views and hotpot, and New Year's Eve.
 
 # Flights: rendered as cards by {% include flights.html %}
 flights:
-  - who: Wyn & family (6)
+  - who: Kaan Family (6)
     airline: Singapore Airlines
     flight: SQ846
     from: { code: SIN, city: Singapore, date: Fri 12/25, time: "02:10" }
@@ -18,7 +18,7 @@ flights:
     flight: CA404
     from: { code: SIN, city: Singapore T1, date: Fri 12/25, time: "16:00" }
     to:   { code: TFU, city: Chengdu Tianfu T1, date: Fri 12/25, time: "21:05" }
-  - who: All 7
+  - who: Kaan Family (all 7)
     airline: Singapore Airlines
     flight: SQ819
     from: { code: CKG, city: Chongqing Jiangbei T3, date: Sat 1/2, time: "02:35" }
@@ -29,8 +29,8 @@ flights:
 days:
   - date: Fri 12/25
     city: Chengdu
-    day: "Wyn & family: land 06:55, drop bags at the hotel and rest. Afternoon tea in People's Park, stroll Kuanzhai Alley"
-    night: "Wyn & family: dinner near the hotel. Wonbo: lands 21:05, to the hotel (about 1 hour)"
+    day: "Kaan Family: land 06:55, drop bags at the hotel and rest. Afternoon tea in People's Park, stroll Kuanzhai Alley"
+    night: "Kaan Family: dinner near the hotel. Wonbo: lands 21:05, to the hotel (about 1 hour)"
   - date: Sat 12/26
     city: Chengdu
     day: Panda Base (pandas are most active in the morning; use the electric carts inside), Wenshu Monastery
@@ -341,21 +341,21 @@ places:
 ## At a glance
 
 - **Dates**: Fri 2026.12.25 – Sat 2027.01.02
-- **Group**: 7 people. Wyn, Wyn's parents, Wyn's brother, Meredith, Meredith's boyfriend, and Wonbo
+- **Group**: the Kaan Family, 7 people. Wyn, Wyn's parents, Bryon, Meredith, Kj and Wonbo
 - **Route**: Singapore → Chengdu (4 nights) → high-speed train → Chongqing (3 nights plus the last day) → Singapore
 
 ## Flights (booked)
 
 {% include flights.html %}
 
-- Wyn and family arrive in the morning, and Wonbo joins that night.
+- Wyn, her parents, Bryon, Meredith and Kj arrive in the morning, and Wonbo joins that night.
 - Wonbo's ticket (CA404) includes one 23kg checked bag.
 
 ## Itinerary
 
 {% include itinerary.html %}
 
-- Wyn and family arrive after an overnight flight, so day 1 stays light and close to the hotel. Places everyone wants to see together, like the Panda Base, start the next day once Wonbo has joined.
+- The Kaan Family arrive after an overnight flight, so day 1 stays light and close to the hotel. Places everyone wants to see together, like the Panda Base, start the next day once Wonbo has joined.
 - **Dress-up day (12/28, Wyn is checking)**: a package with costume rental, hair and makeup, then a traditional banquet where everyone sits and watches a show while eating. Jinli Old Street is the classic place for the costumes in Chengdu, so it's paired with Wuhou Shrine next door. The face-changing show moved here from 12/26.
 - With parents in the group, places with lots of stairs also list a way to do less walking.
 - The New Year countdown at Jiefangbei is extremely crowded and the streets around it are closed to traffic. Pick a meeting point in case the group gets separated.
@@ -403,14 +403,14 @@ Each card links to reviews and photos on TripAdvisor, background on Wikipedia, a
 ## Where to stay
 
 - **Chengdu (12/25–12/28, 4 nights)**: around Chunxi Road and Taikoo Li, on metro lines 2 and 3.
-- Wyn and family arrive at 7am, long before the usual 2pm check-in. To rest right away, **book from the night of 12/24** or request early check-in ahead of time.
+- The Kaan Family arrive at 7am, long before the usual 2pm check-in. To rest right away, **book from the night of 12/24** or request early check-in ahead of time.
 - **Chongqing (12/29–12/31, 3 nights)**: around Jiefangbei and Hongyadong, within walking distance after the countdown.
 - **1/1**: check out, leave the bags at the hotel, and head to the airport at night. To shower and rest before the red-eye, consider **booking the night of 1/1 too**.
 - For seven, book 3–4 rooms or a serviced apartment. In China only places **registered to host foreign guests** can take foreigners, so confirm that before booking.
 
 ## Getting around
 
-- **Tianfu Airport → central Chengdu**: about 1 hour by metro line 18 or taxi. Wyn and family will have a lot of luggage, so a pre-booked van pickup is easiest. Wonbo takes a taxi or Didi at night.
+- **Tianfu Airport → central Chengdu**: about 1 hour by metro line 18 or taxi. The Kaan Family will have a lot of luggage, so a pre-booked van pickup is easiest. Wonbo takes a taxi or Didi at night.
 - **Chengdu → Chongqing high-speed train**: Chengdu East → Chongqing West or Chongqing North, about 1h10m–1h40m. Book with passports on the 12306 app or Trip.com, and buy all seven tickets in one order to sit together.
 - **Downtown Chongqing → Jiangbei Airport T3**: about 40 minutes by taxi or Didi. The metro stops before midnight, so go by car at night.
 - **In the cities**: the metro is easiest. A taxi or Didi takes four, so split into two cars or call a 6–7 seater.
@@ -418,10 +418,10 @@ Each card links to reviews and photos on TripAdvisor, background on Wikipedia, a
 ## To do
 
 - Flights: Wonbo's CA404 out and SQ819 back are booked
-- Wyn and family on SQ846 out; confirm all seven are on SQ819 back
+- Kaan Family (6) on SQ846 out; confirm all seven are on SQ819 back
 - Entry rules: check the current visa-free entry policy (dates and eligible passports) before departure
 - Book hotels (foreign guests accepted; extra nights on 12/24 and 1/1?)
-- Airport van pickup for Wyn and family on the morning of 12/25
+- Airport van pickup for the Kaan Family on the morning of 12/25
 - Dress-up package and banquet dinner show for 12/28 (Wyn is checking)
 - High-speed train Chengdu → Chongqing and train to Leshan (book early over the holidays)
 - Panda Base tickets (booked under real names)
