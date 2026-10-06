@@ -56,7 +56,7 @@ Jekyll로 만든 여행 블로그예요. GitHub Pages 프로젝트 사이트라�
 - 나라별·연도별 목록과 지역 탭에는 아직 안 나와요.
 - 다녀온 뒤에는 `planned: true` 를 지우고 `cover`, 사진, 후기를 채우면 그대로 여행기가 돼요. 주소는 바뀌지 않아요.
 
-예시: `_trips/2026-chongqing-chengdu.md`
+예시: `_trips/2026-chengdu-chongqing.md`
 
 ## 내 컴퓨터에서 미리 보기
 
