@@ -1,0 +1,21 @@
+{% comment %}
+  Usage: {% include places.html city="chengdu" %}
+  Renders places.<city> from the trip's front matter as cards with source links.
+  places:
+    chengdu:
+      - name: Panda Base
+        why: one line
+        links: [{ label: TripAdvisor, url: ... }]
+        maps: optional Google Maps search text
+{% endcomment %}
+{% assign city_name = include.city | capitalize %}
+<div class="restaurants places">
+  {% for r in page.places[include.city] %}
+  <div class="restaurant">
+    {% if r.kind %}<p class="restaurant-kind">{{ r.kind }}</p>{% endif %}
+    <h4>{{ r.name }}</h4>
+    <p class="restaurant-why">{{ r.why }}</p>
+    {% include source-links.html item=r city=city_name %}
+  </div>
+  {% endfor %}
+</div>

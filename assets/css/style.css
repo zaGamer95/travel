@@ -145,3 +145,12 @@ h1 .badge { font-size: .9rem; }
 .phrase-card { margin: 12px 0 24px; padding: 16px 18px; border-radius: 10px; background: var(--tag-bg); border: 1px solid var(--line); }
 .phrase-card .zh { font-size: 1.25rem; font-weight: 600; line-height: 1.6; margin: 0 0 8px; }
 .phrase-card .tr { margin: 0; color: var(--muted); font-size: .9rem; }
+
+/* Source links on place and restaurant cards */
+.sources { margin-top: auto !important; padding-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+.sources a {
+  font-size: .75rem; font-weight: 600; padding: 1px 9px; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--accent);
+}
+.sources a:hover { text-decoration: none; border-color: var(--accent); }
+.sources a::after { content: " ↗"; }
