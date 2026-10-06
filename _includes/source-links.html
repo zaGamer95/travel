@@ -1,0 +1,9 @@
+{% comment %}
+  Source links for a place or restaurant: its own links list plus a Google Maps search
+  (reviews and photos). Used by places.html and restaurants.html.
+  Params: item (with optional links: [{label, url}] and maps: search text), city
+{% endcomment %}
+{% assign q = include.item.maps | default: include.item.name | append: " " | append: include.city %}
+<p class="sources">
+  {% for l in include.item.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}<a href="https://www.google.com/maps/search/?api=1&amp;query={{ q | url_encode }}" target="_blank" rel="noopener">Google Maps</a>
+</p>

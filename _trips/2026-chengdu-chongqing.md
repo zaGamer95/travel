@@ -77,71 +77,265 @@ restaurants:
       why: One of Chengdu's best-known hotpot spots, famous for a very spicy broth.
       warn: [tallow]
       tip: The tallow broth is the whole point here. Order a split pot (鸳鸯锅), a normal menu item, and Wyn's mum eats from the mushroom or tomato side.
+      maps: 大龙燚火锅 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Restaurant_Review-g297463-d10586519-Reviews-DaLong_Yi_Hotpot_YuLin-Chengdu_Sichuan.html" }
+        - { label: Trip.com, url: "https://us.trip.com/restaurant/china/chengdu/detail/dalong-yi-hotpot-11397473/" }
     - name: Shu Daxia (蜀大侠)
       kind: Hotpot
       why: A big chain, so a table for seven is easy to get.
       warn: [tallow]
       tip: Check the menu for a split pot or a non-tallow broth they already serve; don't ask them to change their red broth.
+      maps: 蜀大侠火锅 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com.my/Restaurant_Review-g297463-d10772740-Reviews-Shu_DaXia_Hotpot_Xi_YuLong-Chengdu_Sichuan.html" }
+        - { label: Trip.com, url: "https://www.trip.com/restaurant/china/chengdu/detail/shu-daxia-hotpot-26746641/" }
     - name: Yulin Chuanchuan (玉林串串香)
       kind: Chuanchuan skewers
       why: Chengdu-style skewers you pick yourself and cook in the broth.
       warn: [tallow]
       tip: You choose every skewer, so skipping beef is easy. The broth is still tallow and there's usually no split option, so Wyn's mum may want to sit this one out.
+      maps: 玉林串串香 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Restaurant_Review-g297463-d4704824-Reviews-YuLin_ChuanChuan_Xiang_YuLin-Chengdu_Sichuan.html" }
+        - { label: Food guide, url: "https://quietroutes.com/travel-guide/yulin-neighborhood-food-guide/" }
     - name: Ma Wangzi (马旺子)
       kind: Sichuan dishes
       why: A polished Sichuan restaurant with private rooms, good with parents.
       warn: [beef]
       tip: Skip the beef dishes and order chicken, pork and tofu.
+      maps: 马旺子 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Restaurant_Review-g297463-d11715905-Reviews-Ma_Wang_Zi-Chengdu_Sichuan.html" }
+        - { label: 240 Hours in China, url: "https://www.240hoursinchina.com/en-us/chengdu/restaurants/ma-wang-zi-sichuan-bistro" }
     - name: Chen Mapo Tofu (陈麻婆豆腐)
       kind: Sichuan dishes
       why: Where mapo tofu was invented.
       warn: [beef]
       tip: Mapo tofu is made with minced beef, so Wyn's mum orders other dishes here.
+      maps: 陈麻婆豆腐 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Restaurant_Review-g297463-d1419255-Reviews-Chen_Mapo_tofu_Luomashi-Chengdu_Sichuan.html" }
+        - { label: Trip.com, url: "https://us.trip.com/restaurant/china/chengdu/detail/chen-mapo-tofu-luomashi-11383200/" }
     - name: Long Chaoshou (龙抄手)
       kind: Snacks
       why: A long-running wonton shop on Chunxi Road. Good for trying many small snacks.
       warn: [ok]
+      maps: 龙抄手 春熙路 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Restaurant_Review-g297463-d1217812-Reviews-Longchaoshou-Chengdu_Sichuan.html" }
+        - { label: Trip.com, url: "https://us.trip.com/restaurant/china/chengdu/detail/longchaoshou-10560653/" }
     - name: Zhong Dumplings (钟水饺)
       kind: Snacks
       why: Pork dumplings in a sweet and spicy sauce.
       warn: [ok]
+      maps: 钟水饺 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Restaurant_Review-g297463-d3409310-Reviews-ZhongShuiJiao_WuHou-Chengdu_Sichuan.html" }
+        - { label: The Mala Market, url: "https://blog.themalamarket.com/chengdu-challenge-15-dumplings-red-oil-zhong-shui-jiao/" }
     - name: Shuangliu Laoma Rabbit Heads (双流老妈兔头)
       kind: Adventurous
       why: Spicy rabbit heads that locals have with beer. Worth trying once.
       warn: [ok]
+      maps: 双流老妈兔头 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Restaurant_Review-g297463-d3409037-Reviews-ShuangLiu_LaoMa_TuTou-Chengdu_Sichuan.html" }
+        - { label: The World of Chinese, url: "https://www.theworldofchinese.com/2023/01/journey-down-the-rabbit-hole-of-chengdus-favorite-street-snack/" }
   chongqing:
     - name: Peijie Hotpot (佩姐老火锅)
       kind: Hotpot
       why: One of Chongqing's most famous hotpot restaurants. Expect a long queue.
       warn: [tallow, beef]
       tip: Classic Chongqing beef-tallow hotpot with beef tripe (毛肚) as the signature. Go only if they do a split pot; otherwise it's a night out without Wyn's mum.
-    - name: Air-raid shelter hotpot (防空洞火锅)
+      maps: 佩姐老火锅 重庆
+      links:
+        - { label: Trip.com, url: "https://www.trip.com/restaurant/china/chongqing/detail/peijie-hotpot-15318356/" }
+        - { label: Hotpot guide, url: "https://chinaexplorertour.com/2025/blog/best-chongqing-hotpot-for-tourists-food-guide/" }
+    - name: Dongting air-raid shelter hotpot (洞亭火锅)
       kind: Hotpot
       why: Hotpot inside old air-raid shelter caves, a uniquely Chongqing atmosphere.
       warn: [tallow]
-      tip: Mostly tallow broth too. Pick one that lists a split pot on the menu.
+      tip: Mostly tallow broth too. Check that they have a split pot before going.
+      maps: 洞亭火锅 重庆
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Restaurant_Review-g294213-d3409500-Reviews-Dong_Ting_Xian_Hotpot-Chongqing.html" }
+        - { label: Trip.com, url: "https://www.trip.com/restaurant/china/chongqing/detail/dongting-hot-pot-17007883/" }
     - name: Taoranju (陶然居)
       kind: Jianghu home-style dishes
       why: Chongqing home cooking such as laziji (辣子鸡, chili-fried chicken). Has large round tables.
       warn: [ok]
       tip: Just skip the beef dishes when ordering.
+      maps: 陶然居 解放碑 重庆
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Restaurant_Review-g294213-d3409753-Reviews-TaoRanJu_JieFang_Bei-Chongqing.html" }
+        - { label: Trip.com, url: "https://www.trip.com/restaurant/china/chongqing/detail/taoranju-361221/" }
     - name: Huashi Wanza Noodles (花市豌杂面)
       kind: Noodles
       why: Chongqing noodles topped with peas and minced pork. A good breakfast.
       warn: [ok]
+      maps: 花市豌杂面 重庆
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Restaurant_Review-g294213-d15410877-Reviews-Huashi_Noodle-Chongqing.html" }
+        - { label: Trip.com, url: "https://us.trip.com/restaurant/china/chongqing/detail/hua-shi-wan-za-mian-379002/" }
     - name: Haoyoulai Suanlafen (好又来酸辣粉)
       kind: Noodles
       why: Sour and spicy sweet-potato noodles near Jiefangbei.
       warn: [ok]
+      maps: 好又来酸辣粉 重庆
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Restaurant_Review-g294213-d3409545-Reviews-Hao_YouLai_SuanLa_Fen_JieFang_Bei-Chongqing.html" }
     - name: Bayi Food Street (八一好吃街)
       kind: Street food
       why: A food alley next to Jiefangbei for grazing on a bit of everything.
       warn: [shellfish, cheese]
       tip: Spicy stir-fried clams (花甲) are everywhere (Wonbo skips them), and cheese-topped snacks too (Wyn's mum skips those).
+      maps: 八一好吃街 重庆
+      links:
+        - { label: Trip.com, url: "https://sg.trip.com/moments/detail/chongqing-158-139510275/" }
+        - { label: Chinatripedia, url: "https://chinatripedia.com/bayi-food-street-chongqing-foodies-haven/" }
     - name: Chen Mahua (陈麻花)
       kind: Snacks
       why: Ciqikou's famous fried dough twists. Good as gifts too.
       warn: [ok]
+      maps: 陈建平老街陈麻花 磁器口 重庆
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Restaurant_Review-g294213-d3409457-Reviews-ChenJianPing_LaoJie_Chen_MaHua-Chongqing.html" }
+        - { label: Trip.com, url: "https://www.trip.com/restaurant/china/chongqing/detail/chen-jian-ping-378998/" }
+# Sight cards: {% include places.html city="chengdu" %}
+places:
+  chengdu:
+    - name: "Giant Panda Base"
+      kind: Sight
+      why: "The breeding research base where you see pandas, cubs and red pandas up close."
+      maps: 成都大熊猫繁育研究基地
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g297463-d457089-Reviews-Chengdu_Research_Base_of_Giant_Panda_Breeding-Chengdu_Sichuan.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Chengdu_Research_Base_of_Giant_Panda_Breeding" }
+    - name: "Wenshu Monastery"
+      kind: Temple
+      why: "A working Buddhist monastery with gardens and a vegetarian restaurant."
+      maps: 文殊院 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g297463-d457103-Reviews-Wenshu_Yuan_Monastery-Chengdu_Sichuan.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Wenshu_Temple_(Chengdu)" }
+    - name: "People's Park and Heming Teahouse"
+      kind: Park
+      why: "Sip tea under the trees and watch locals dance, sing and play mahjong."
+      maps: 人民公园 鹤鸣茶社 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g297463-d546614-Reviews-Chengdu_Renmin_Park-Chengdu_Sichuan.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/People's_Park_(Chengdu)" }
+    - name: "Kuanzhai Alley"
+      kind: Old town
+      why: "Restored Qing-dynasty lanes with snacks, shops and teahouses."
+      maps: 宽窄巷子 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g297463-d1832089-Reviews-Kuanzhai_Alley-Chengdu_Sichuan.html" }
+    - name: "Leshan Giant Buddha"
+      kind: Day trip
+      why: "A 71m Buddha carved into a riverside cliff, UNESCO-listed. The river cruise is the low-stairs way to see it."
+      maps: 乐山大佛
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g303771-d488514-Reviews-Leshan_Giant_Buddha-Leshan_Sichuan.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Leshan_Giant_Buddha" }
+    - name: "Wuhou Shrine"
+      kind: Temple
+      why: "A Three Kingdoms-era memorial temple next to Jinli."
+      maps: 武侯祠 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g297463-d508982-Reviews-Wuhou_Memorial_Temple-Chengdu_Sichuan.html" }
+    - name: "Jinli Ancient Street"
+      kind: Old town
+      why: "Lantern-lit lanes, and the classic place to rent traditional costumes for photos."
+      maps: 锦里古街 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g297463-d1832090-Reviews-Jinli_Pedestrian_Street-Chengdu_Sichuan.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Jinli" }
+    - name: "Du Fu Thatched Cottage"
+      kind: Garden
+      why: "A quiet garden and museum for the Tang-dynasty poet Du Fu."
+      maps: 杜甫草堂 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g297463-d488516-Reviews-Du_Fu_Cottage-Chengdu_Sichuan.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Du_Fu_Thatched_Cottage" }
+    - name: "Anshun Bridge"
+      kind: Night view
+      why: "A covered bridge over the Jin River, lit up at night."
+      maps: 安顺廊桥 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g297463-d9757726-Reviews-Anshun_Bridge_Dongmen_Bridge-Chengdu_Sichuan.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Anshun_Bridge" }
+    - name: "Chunxi Road and Taikoo Li"
+      kind: Shopping
+      why: "The main shopping streets, with the giant panda climbing the IFS building."
+      maps: 春熙路 太古里 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g297463-d15671160-Reviews-Taikoo_Li-Chengdu_Sichuan.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Chunxi_Road" }
+    - name: "Shu Feng Ya Yun (Sichuan opera)"
+      kind: Show
+      why: "A well-known face-changing and Sichuan opera show, if the banquet show falls through."
+      maps: 蜀风雅韵 成都
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g297463-d1759437-Reviews-Shu_Feng_Ya_Yun_Sichuan_Opera-Chengdu_Sichuan.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Bian_lian" }
+  chongqing:
+    - name: "Jiefangbei"
+      kind: Landmark
+      why: "The city-centre monument and pedestrian area, and the New Year countdown spot."
+      maps: 解放碑 重庆
+      links:
+        - { label: TripAdvisor, url: "https://en.tripadvisor.com.hk/Attraction_Review-g294213-d2003325-Reviews-Jiefang_Monument-Chongqing.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Liberation_Monument_in_Chongqing" }
+    - name: "Hongyadong"
+      kind: Night view
+      why: "Stilted buildings stacked up the cliff, lit gold at night."
+      maps: 洪崖洞 重庆
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g294213-d1814790-Reviews-Hongya_Cave-Chongqing.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Hongya_Cave" }
+    - name: "Liziba Station"
+      kind: Only in Chongqing
+      why: "The monorail that runs straight through a residential building."
+      maps: 李子坝 轻轨穿楼 重庆
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g294213-d15758086-Reviews-Liziba_Station-Chongqing.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Liziba_station" }
+    - name: "Ciqikou Ancient Town"
+      kind: Old town
+      why: "An old river port with snack streets and Chen Mahua shops."
+      maps: 磁器口古镇 重庆
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g294213-d502852-Reviews-Ciqikou_Porcelain_Port-Chongqing.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Ciqikou,_Chongqing" }
+    - name: "Yangtze River Cableway"
+      kind: Ride
+      why: "A cable car straight across the Yangtze with skyline views."
+      maps: 长江索道 重庆
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g294213-d6207908-Reviews-Yangtze_River_Cableway-Chongqing.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Yangtze_River_Cableway" }
+    - name: "Nanshan Yikeshu viewpoint"
+      kind: Night view
+      why: "The classic lookout over the whole Chongqing skyline at night."
+      maps: 南山一棵树观景台 重庆
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g294213-d1814684-Reviews-Chongqing_South_Mountain-Chongqing.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Single_Tree_Vista" }
+    - name: "Dazu Rock Carvings"
+      kind: Day trip
+      why: "UNESCO-listed Buddhist cliff carvings, mostly flat paths."
+      maps: 大足石刻
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g325577-d319625-Reviews-The_Dazu_Rock_Carvings-Dazu_County.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Dazu_Rock_Carvings" }
+    - name: "Wulong Karst"
+      kind: Day trip
+      why: "Giant natural stone bridges and gorges, with lots of stairs."
+      maps: 武隆天生三桥
+      links:
+        - { label: TripAdvisor, url: "https://www.tripadvisor.com/Attraction_Review-g1372315-d1814702-Reviews-Wulong_Tiankeng_Three_Bridges-Wulong_County.html" }
+        - { label: Wikipedia, url: "https://en.wikipedia.org/wiki/Wulong_Karst" }
 ---
 
 ## At a glance
@@ -167,9 +361,21 @@ restaurants:
 - The New Year countdown at Jiefangbei is extremely crowded and the streets around it are closed to traffic. Pick a meeting point in case the group gets separated.
 - The 12/30 day trip is optional. For seven people, hiring a van with a driver for the day is easier than splitting up across trains and taxis.
 
+## Sights
+
+Each card links to reviews and photos on TripAdvisor, background on Wikipedia, and a Google Maps search with more reviews and photos.
+
+### Chengdu
+
+{% include places.html city="chengdu" %}
+
+### Chongqing
+
+{% include places.html city="chongqing" %}
+
 ## Where to eat
 
-**Wyn's mum can't eat beef or cheese**, and **Wonbo can't eat shellfish**. Famous places are still on the list, with what to watch out for; whoever can't eat a dish just orders something separate. Seven people need a big table, so book popular places ahead or arrive at opening time. Check opening hours and locations again before the trip.
+**Wyn's mum can't eat beef or cheese**, and **Wonbo can't eat shellfish**. Famous places are still on the list, with what to watch out for; whoever can't eat a dish just orders something separate. Seven people need a big table, so book popular places ahead or arrive at opening time. Each card links to reviews and photos; for chains the link is one branch, so pick the most convenient one. Check opening hours and locations again before the trip.
 
 ### What to watch out for in Sichuan food
 
