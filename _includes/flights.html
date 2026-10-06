@@ -1,0 +1,35 @@
+{% comment %}
+  여행 글 front matter 의 flights 목록을 카드로 보여줘요.
+  flights:
+    - who: 6명
+      airline: 싱가포르항공
+      flight: SQ846
+      from: { code: SIN, city: 싱가포르, date: 12/25 (금), time: "02:10" }
+      to:   { code: TFU, city: 청두, date: 12/25 (금), time: "06:55" }
+      note: 선택
+{% endcomment %}
+<div class="flights">
+  {% for f in page.flights %}
+  <div class="flight">
+    <div class="flight-head">
+      <span class="flight-no">{{ f.flight }}</span>
+      <span class="flight-airline">{{ f.airline }}</span>
+      {% if f.who %}<span class="flight-who">{{ f.who }}</span>{% endif %}
+    </div>
+    <div class="flight-route">
+      <div class="flight-end">
+        <span class="flight-time">{{ f.from.time }}</span>
+        <span class="flight-code">{{ f.from.code }}</span>
+        <span class="flight-place">{{ f.from.city }} · {{ f.from.date }}</span>
+      </div>
+      <span class="flight-line" aria-hidden="true">✈</span>
+      <div class="flight-end">
+        <span class="flight-time">{{ f.to.time }}</span>
+        <span class="flight-code">{{ f.to.code }}</span>
+        <span class="flight-place">{{ f.to.city }} · {{ f.to.date }}</span>
+      </div>
+    </div>
+    {% if f.note %}<p class="flight-note">{{ f.note }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</div>

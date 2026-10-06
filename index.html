@@ -4,6 +4,15 @@ layout: default
 <h1>{{ site.title }}</h1>
 <p class="intro">{{ site.description }}</p>
 
+{% if site.data.planned_trips.size > 0 %}
+<section class="planned">
+  <h2>다가오는 여행</h2>
+  <div class="trip-list">
+    {% for t in site.data.planned_trips %}{% include trip-card.html trip=t %}{% endfor %}
+  </div>
+</section>
+{% endif %}
+
 <nav class="tabs" data-featured="{{ site.featured_countries | join: ' ' }}">
   <button type="button" data-filter="all" class="active">전체</button>
   {% for c in site.featured_countries %}<button type="button" data-filter="{{ c }}">{{ site.data.countries[c] | default: c }}</button>{% endfor %}

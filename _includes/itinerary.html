@@ -1,0 +1,21 @@
+{% comment %}
+  여행 글 front matter 의 days 목록을 날짜별 카드로 보여줘요.
+  days:
+    - date: 12/25 (금)
+      city: 청두
+      tag: 당일치기     # 선택
+      day: 낮 일정
+      night: 저녁 일정  # 선택
+{% endcomment %}
+<ol class="itinerary">
+  {% for d in page.days %}
+  <li class="day">
+    <div class="day-date"><span class="day-n">{{ forloop.index }}일차</span>{{ d.date }}</div>
+    <div class="day-body">
+      <p class="day-city">{{ d.city }}{% if d.tag %} <span class="day-tag">{{ d.tag }}</span>{% endif %}</p>
+      {% if d.day %}<p><span class="day-label">낮</span>{{ d.day }}</p>{% endif %}
+      {% if d.night %}<p><span class="day-label">저녁</span>{{ d.night }}</p>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>

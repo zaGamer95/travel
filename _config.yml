@@ -7,6 +7,8 @@ home_url: "https://wonbo.site/"
 
 timezone: Asia/Seoul
 markdown: kramdown
+# 예정된 여행(planned: true)은 날짜가 미래라서 이 설정이 있어야 페이지가 만들어져요.
+future: true
 
 # 여행 글은 _trips/ 폴더에 둡니다.
 #   _trips/2025-tokyo.md        -> /travel/2025-tokyo/

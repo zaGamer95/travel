@@ -48,6 +48,24 @@ Jekyll로 만든 여행 블로그예요. GitHub Pages 프로젝트 사이트라�
 
 4. **새 나라**는 `_data/countries.yml` 에 `slug: 표시 이름` 한 줄을 추가하세요. 메인 탭에 따로 띄울 나라는 `_config.yml` 의 `featured_countries` 에서 바꿔요.
 
+## 앞으로 갈 여행 계획 쓰기
+
+아직 안 다녀온 여행도 같은 방식으로 `_trips/` 에 글을 만들고 `planned: true` 한 줄을 넣으면 돼요.
+
+- 메인 위쪽 **다가오는 여행**에 날짜 순으로 나오고, 글 제목 앞에 "계획" 표시가 붙어요.
+- 나라별·연도별 목록과 지역 탭에는 아직 안 나와요.
+- 다녀온 뒤에는 `planned: true` 를 지우고 `cover`, 사진, 후기를 채우면 그대로 여행기가 돼요. 주소는 바뀌지 않아요.
+
+계획 글에서는 front matter에 목록을 적고 본문에 한 줄만 넣으면 카드로 그려져요. 형식은 예시 글을 그대로 따라 하면 돼요.
+
+| 본문에 넣는 줄 | front matter | 보이는 것 |
+| --- | --- | --- |
+| `{% include flights.html %}` | `flights:` | 항공편 카드 |
+| `{% include itinerary.html %}` | `days:` | 날짜별 일정 타임라인 |
+| `{% include restaurants.html city="chengdu" %}` | `restaurants: { chengdu: [...] }` | 식당 카드와 주의 표시 (`tallow` 소기름 국물, `beef` 소고기, `cheese` 치즈, `shellfish` 조개, `ok` 걱정 없음) |
+
+예시: `_trips/2026-chengdu-chongqing.md`
+
 ## 내 컴퓨터에서 미리 보기
 
 ```sh

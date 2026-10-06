@@ -1,0 +1,19 @@
+{% comment %}
+  사용법: {% include restaurants.html city="chengdu" %}
+  여행 글 front matter 의 restaurants.<city> 목록을 카드로 보여줘요.
+  warn 종류: tallow(소기름 국물) beef(소고기) cheese(치즈) shellfish(조개) ok(걱정 없음)
+{% endcomment %}
+{% assign labels = "tallow:소기름 국물,beef:소고기 메뉴,cheese:치즈,shellfish:조개,ok:걱정 없음" | split: "," %}
+<div class="restaurants">
+  {% for r in page.restaurants[include.city] %}
+  <div class="restaurant">
+    <p class="restaurant-kind">{{ r.kind }}</p>
+    <h4>{{ r.name }}</h4>
+    <p class="restaurant-why">{{ r.why }}</p>
+    <p class="warns">
+      {% for w in r.warn %}{% for l in labels %}{% assign kv = l | split: ":" %}{% if kv[0] == w %}<span class="warn warn-{{ w }}">{{ kv[1] }}</span>{% endif %}{% endfor %}{% endfor %}
+    </p>
+    {% if r.tip %}<p class="restaurant-tip">{{ r.tip }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</div>

@@ -4,6 +4,7 @@
 #
 # _trips/2025-tokyo.md          -> 여행 본문 (slug: 2025-tokyo)
 # _trips/2025-tokyo/day-2.md    -> 같은 여행의 하위 글 (목록에는 안 나오고 본문에서 링크)
+# planned: true                 -> 아직 안 다녀온 여행 계획. 메인 위쪽 "다가오는 여행"에만 나와요.
 module Travel
   class ListPage < Jekyll::Page
     def initialize(site, dir, layout, data)
@@ -33,13 +34,16 @@ module Travel
         doc.data["countries"] = Array(doc.data["countries"])
       end
 
-      main = trips.reject { |d| d.data["subpage"] }.sort_by(&:date).reverse
-      main.each do |doc|
+      # planned: true 인 여행은 "다가오는 여행"으로 따로 모으고, 나라·연도 목록에는 넣지 않아요.
+      all_main = trips.reject { |d| d.data["subpage"] }
+      planned = all_main.select { |d| d.data["planned"] }.sort_by(&:date)
+      main = (all_main - planned).sort_by(&:date).reverse
+      all_main.each do |doc|
         doc.data["subpages"] = trips.select { |d| d.data["subpage"] && d.data["trip_slug"] == doc.data["trip_slug"] }
                                     .sort_by { |d| [d.date, d.relative_path] }
       end
       trips.select { |d| d.data["subpage"] }.each do |d|
-        d.data["parent_trip"] = main.find { |m| m.data["trip_slug"] == d.data["trip_slug"] }
+        d.data["parent_trip"] = all_main.find { |m| m.data["trip_slug"] == d.data["trip_slug"] }
       end
 
       main.flat_map { |d| d.data["countries"] }.uniq.each do |slug|
@@ -59,6 +63,7 @@ module Travel
       end
 
       site.data["main_trips"] = main
+      site.data["planned_trips"] = planned
       site.data["trip_years"] = main.map { |d| d.data["year"] }.uniq.sort.reverse
     end
   end
