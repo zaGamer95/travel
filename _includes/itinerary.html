@@ -3,16 +3,24 @@
   days:
     - date: Fri 12/25
       city: Chengdu
-      tag: Day trip     # optional
-      day: daytime plans
-      night: evening plans  # optional
+      status: confirmed     # optional: confirmed or draft
+      tag: Day trip         # optional
+      note: one line        # optional
+      items:                # timed plan, or use day: / night: instead
+        - { t: "06:55", what: Land at Tianfu }
 {% endcomment %}
 <ol class="itinerary">
   {% for d in page.days %}
-  <li class="day">
+  <li class="day{% if d.status == 'draft' %} day-draft{% endif %}">
     <div class="day-date"><span class="day-n">Day {{ forloop.index }}</span>{{ d.date }}</div>
     <div class="day-body">
-      <p class="day-city">{{ d.city }}{% if d.tag %} <span class="day-tag">{{ d.tag }}</span>{% endif %}</p>
+      <p class="day-city">{{ d.city }}{% if d.tag %} <span class="day-tag">{{ d.tag }}</span>{% endif %}{% if d.status %} <span class="day-status day-status-{{ d.status }}">{% if d.status == 'draft' %}Draft{% else %}Confirmed{% endif %}</span>{% endif %}</p>
+      {% if d.note %}<p class="day-note">{{ d.note }}</p>{% endif %}
+      {% if d.items %}
+      <ul class="day-items">
+        {% for i in d.items %}<li><span class="day-time">{{ i.t }}</span><span>{{ i.what }}</span></li>{% endfor %}
+      </ul>
+      {% endif %}
       {% if d.day %}<p><span class="day-label">Day</span>{{ d.day }}</p>{% endif %}
       {% if d.night %}<p><span class="day-label">Evening</span>{{ d.night }}</p>{% endif %}
     </div>

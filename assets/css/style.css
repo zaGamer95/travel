@@ -154,3 +154,13 @@ h1 .badge { font-size: .9rem; }
 }
 .sources a:hover { text-decoration: none; border-color: var(--accent); }
 .sources a::after { content: " ↗"; }
+
+/* Timed itinerary items and confirmed/draft status */
+.day-items { list-style: none; padding: 0; margin: 4px 0 0; }
+.day-items li { display: grid; grid-template-columns: 3.4em 1fr; gap: 8px; font-size: .93rem; line-height: 1.55; padding: 2px 0; }
+.day-time { color: var(--muted); font-variant-numeric: tabular-nums; font-weight: 600; font-size: .85rem; padding-top: 1px; }
+.day-note { color: var(--muted); font-size: .85rem !important; font-style: italic; }
+.day-status { display: inline-block; margin-left: 4px; padding: 0 8px; border-radius: 999px; font-size: .72rem; font-weight: 700; }
+.day-status-confirmed { background: var(--ok-bg); color: var(--ok); }
+.day-status-draft { background: var(--warn-bg); color: var(--warn); }
+.day-draft::before { border-style: dashed; }
