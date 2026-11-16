@@ -13,6 +13,21 @@ layout: default
 </section>
 {% endif %}
 
+{% assign guides = site.pages | where: "guide", true %}
+{% if guides.size > 0 %}
+<section class="planned guides">
+  <h2>Guides</h2>
+  <div class="trip-list">
+    {% for g in guides %}
+    <article class="trip-card">
+      <h2><a href="{{ g.url | relative_url }}">{{ g.title }}</a></h2>
+      {% if g.summary %}<p>{{ g.summary }}</p>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 <nav class="tabs" data-featured="{{ site.featured_countries | join: ' ' }}">
   <button type="button" data-filter="all" class="active">All</button>
   {% for c in site.featured_countries %}<button type="button" data-filter="{{ c }}">{{ site.data.countries[c] | default: c }}</button>{% endfor %}

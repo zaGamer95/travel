@@ -77,3 +77,7 @@ bundle exec jekyll serve
 ## Storage
 
 Each photo is roughly 200–400KB, so the repo's recommended 1GB is enough for dozens of trips. Don't commit originals; upload them to an album service and link it with `album_url`. If space runs low later, move only the photos to external storage (Cloudflare R2 etc.) and change the paths.
+
+## Guides
+
+Evergreen pages that aren't trips, such as `singapore.md` → `/travel/singapore/`. Use `layout: guide`, give it a `permalink`, and add `guide: true` to list it under **Guides** on the home page. Cards use `{% include places.html list="views" city="singapore" %}`: `list` picks the group under `places:`, and `city` is added to the Google Maps search.
