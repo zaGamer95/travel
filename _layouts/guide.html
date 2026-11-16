@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% comment %}
+  A standalone, evergreen guide page (not a trip). Set guide: true in the front matter
+  to list it under "Guides" on the home page.
+{% endcomment %}
+<article class="trip guide">
+  <h1>{{ page.title }}</h1>
+  <p class="meta">{% if page.updated %}Last updated {{ page.updated | date: "%Y.%m.%d" }}{% endif %}</p>
+  {{ content }}
+</article>
